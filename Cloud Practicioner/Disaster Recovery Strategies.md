@@ -1,0 +1,4 @@
+- Backup and restore (cheapest)
+- Pilot Ligt: core functions, ready to scale but minimal setup
+- Warm Standby: Full version of the app but minimum size
+- Multi-Site / Hot-Site: Stores a full version of the app in case of disaster (most expensive)

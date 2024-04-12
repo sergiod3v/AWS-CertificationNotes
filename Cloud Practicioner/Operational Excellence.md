@@ -1,0 +1,9 @@
+- Infrastructure as Code (IaC): CloudFormation
+- Minimize human error
+- Monitor & support systems so all processes run continously
+- Make frequent, small, reversible changes
+- #### Prepare everything to operational excellence
+	- CloudFormation templates
+	- Config
+	- CloudTrail (api calls) monitoring, CloudWatch, X-RAY
+	- Evolve-> all CI/CD Tools
