@@ -1,0 +1,51 @@
+- Client VPN used to connect a single laptop, not an entire datacenter 
+- Direct Connect, consistent and private because your company is the only Ethernet cable connected to aws cloud
+- Get professional advice for migration -> APN Consulting Service
+- Concierge Support Team -> Billing and account experts
+- Compute Optimizer doesnot provide optimization recommendations for S3 or EFS
+- Trusted Advisor is for guidance in best practices on cost/toptimization, security, fault tolerance, service limits and performance improvement
+- Resource Performance monitoring, events, alerts -> CloudWatch
+- Accoutn specific audit -> CloudTrail
+- Reource Specific change history, audit, compliance -> Config
+- AWS Service Health Dashboard exists xD
+- Quotas for max service capacity monitoring so Relaiability Pillar is satisfied
+- ==AMI SAME REGION AS EC2==
+- Cost Explorer for cost-optimizing oportunities
+- Central Login -> SSO Singe SignOn
+- S3, Pay depending on the storage class
+- AutoScaling is FREE
+- S3 & Storage Gateway encryption automatically
+- Personal Health, triggered by health status changes in your services
+- Systems Manager centralizes operational data from aws rsrc
+- Sys Manager group recent APIs call for a rsrc group
+- Pen testing allowed
+- Read Replica is for performance
+- OpsWorks -> Chef & Puppet to automate config on instances
+- Plug in MFA U2F Security Key
+- Minimize Business RISKS -> gOVERNANCE pERSPECTIVE
+- Security of resources -> IAM with IAM policies
+- emr -> Elastic Map Reduce
+- Tape, File & Volume -> Storage Gateway
+- Service Health -> General Status --- Personal Health -> Detailed View
+- Route53 + Cloudfront -> X DDoS
+- Security & Compliance -> AWS & Cust
+- Geo Zones -> Firewall
+- Site-to-Site VPN -> Virtual Private & Customer Gateway
+- Create acc for Development & one for production for separate invoices
+- Under util instances -> Cost Explore & Trusted Advisor
+- Trusted Advisor guidance to provision resources
+- Redshift (data warehouse analytics) -> OLAP
+- Kendra -> sortofchatgpt to scan multiple docs
+- Cost, Usage, Reservation Budget exist
+- active - passive -> readonly replica -> Failover Routing 
+- EFS IS GL
+- You will pay a fee each time you read from or write data stored on the Amazon Elastic File System (Amazon EFS) - Infrequent Access storage class
+- WAF Global Scope
+- You must activate tags before they can appear
+
+# 2
+- Convertible RI -> variable reserved workload
+- ![[Pasted image 20240416101256.png]]
+- Sys Managers automate tasks across multiple resources
+- **AWS Health Dashboard - Your Account Health** -> No oeprational insights
+- The AWS Health Dashboard – Service health offers the possibility to subscribe to an RSS feed to be notified of interruptions to each service.
