@@ -1,0 +1,52 @@
+### Private vs Public IP - IPv4
+- Dont use Elastic IP
+- Random IP + DNS Name for it best practice
+### Placements Groups
+- Where to put EC2 Instances to be placed in infra
+- Strats
+	- Cluster: low-latency group in a single AZ
+		- Pros: Great network (10Gbps bamdwith)
+		- Cons: If AZ fails, all instances fail at the same time
+		- Use cases:
+			- Big Data jobs to be completed fast
+			- Application that needs extremely low latency and high network
+		- ![[Pasted image 20240416123440.png]]
+	- Spread: spread across underlying hardware (max 7)
+		- Pros:
+			- Can span across AZs
+			- EC2 Instances are on a physical hardware
+		- Cons: Limited to 7 instances per AZ
+		- Use cases:
+			- Application that needs to maximize high availability
+			- Critical Apps where instancs have to be insolated
+		- ![[Pasted image 20240416123659.png]]
+	- Partition: instances across partitions within an AZ. Scales to 100s of instances
+		- Up to 7 per AZ
+		- Can span multiple AZ in the same region
+		- Up to 100s of EC2s
+		- Dont share racks with instances in other partitions
+		- EC2 inside get access to the partition information as metadata
+		- Use cases: 
+			- HDFS, HBase, Cassandra, Kafka
+		- ![[Pasted image 20240416124015.png]]
+
+### Elastic Network Interfaces
+- They act as gateway for network traffic, allowing send & receive data
+- Represents a _***network card:***_
+	- Isolation and security between resources in the saeme physical server
+	- Efficent utilization of network resources
+- Following att:
+	- Primari private IPv4, one more secondary IPv4
+	- 1 Elastic IP per IPv4
+	- 1 Public IPv4
+	- A MAC Address
+- Can create independetly and attach no the fly to EC2
+- Bound to specific AZ
+- ![[Pasted image 20240416130623.png]]
+### Hibernate Instances
+- Shuts down the instance
+- RAM is preserved in an EBS
+- EBS must be encrypted
+- EBS gives data to instance when started again
+- No instance store allowed
+- NOT more than 60 days hibernated
