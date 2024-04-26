@@ -1,0 +1,29 @@
+- ### NLB Layer 4:
+	- Forward TCP & UDP traffic to your instances
+	- Less latency -> ~100ms vs 400ms ALB
+	- _**NLB has one static IP per AZ**_
+	- Support assigning Elastic IP
+	- not free
+	- ![[Pasted image 20240422115845.png]]
+	- Target Groups can be:
+		- EC2 instances
+		- IP Addresses - must be private
+	- Health Checks support TCP, HTTP, HTTPS
+	- EC2 must allow traffic from the nlb with security groups
+- ### Gateway Load Balancer - Layer 3
+	-  Traffic inspector so you can apply Firewalls, Intrusion Detection, Deep Packet Inspection, etc...
+	- ![[Pasted image 20240422120929.png]]
+	- Geneve protocol: 6081 Port
+	- #### Sticky Sessions:
+		-  client will use the same instance in a ALB context
+		- uses "token" that expires 
+		- The user doesn't lose session data
+		- Cons: Imbalance the load of the ALB
+		- Cookie Name
+			- Application based
+			- Duration Based
+- #### Cross Zone Load Balancing
+	- Distributestraffic to all of the registered instances across the same AZ
+	- ![[Pasted image 20240422122352.png]]
+	- __No charge for inter AZ data exchange__
+	- NLB & GLB is nto default, but if enabled, inter AZ traffic will be charged

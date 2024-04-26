@@ -1,0 +1,21 @@
+ - Allows traffic to be encrypted in transit (in-flight encryption)
+ - SSL: Secure Sockets Layer
+ - TLS: Transport Layer Security is a newer version
+ - Issued by Authorities
+ - #### Load Balancer
+	 - Uses SSL/TLS server certificate
+	 - Manage certificates using ACM (AWS Certificate Manager)
+	 - receives encrypted info, uses cert to unencrypt and can talk in HTTP with the ec2 instances
+- ### SNI - Server Name Indication
+	- Multiple SSL
+	- serve different websites
+	- find the correct cert, or return the default one
+	- ==Only works for ALB, NLB & CloudFront==
+	- ![[Pasted image 20240422131422.png]]
+	- 
+
+- ![[Pasted image 20240422132018.png]]
+- ![[Pasted image 20240422132048.png]]
+- ACM (Certificate Manager): you can register your certs by filling the following boxes (this will add it to ACM):
+	- ![[Pasted image 20240422132144.png]]
+- Network Load Balancer has one static IP address per AZ and you can attach an Elastic IP address to it. Application Load Balancers and Classic Load Balancers have a static DNS name.

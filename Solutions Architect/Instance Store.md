@@ -1,0 +1,48 @@
+- ### EBS Snapshot archive
+	- 75%cheaper
+	- 24-72h to retrieve
+- ### Instance
+	- Extreme performance (IOPS)
+	- Direct with the instance
+	- Data lost if stopped
+- ### EBS Volume Types
+	- #AssosiateExam
+	- gp2/gp3: general ssd best price/performance
+		- can independetly set input/output speed separately 
+	- io1/io2 Block Express: Highest performance SSD
+		- input/output speed set together
+		- low-latency/high throughput workloads
+	- Volumes characterized in size/throughput/IOPS
+	- **only gp2/gp3/io1/io2 can be used as boot volumes**
+	- ==Provisioned IOPS==:
+		- Critical business apps sustained IOPS performance
+		- Apps that need > 16k IOPS
+		- Databases workloads (sensitive to storage performance anc consistency)
+- ### EBS MultiAttach!!
+	- only io1/io2
+	- full r/w high performance
+	- AZ SPECIFIC
+	- Up to 16 EC2 #AssosiateExam 
+- ### EBS Encryption
+	- Leverages keys from KMS
+	- Snapshots of encrypted volumes are encrypted
+	- encrypted snapthot -> encrypted volume if created from it
+- ### EFS
+	- Use security groups to control access to EFS
+	- Only Linux compatible (instance image)
+	- encryption at rest using kms
+	- POSIX file system
+	- Classes:
+		- Scale:
+		- Performance
+		- Throughput
+			- Bursting
+			- Provisioned
+			- Elastic
+	- Tiers -> Lifecycle just like s3
+	- Very fucking cool dbajhdbhja
+	- Inspect instance local files using the terminal and you will be able to see the shared file system just like a folder
+	- ==EFS Mount Target==
+	- #AssosiateExam You are running a high-performance database that requires an IOPS of 310,000 for its underlying storage.:
+		1. You can set up replication mechanism on another ec2 instance to have a standby copy
+		2. Use an instance Store

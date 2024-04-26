@@ -1,0 +1,16 @@
+- CDN using Edge Location (EL)
+-  Customer -> Edge Location -> AWS -> Edge Location -> Customer
+- req caches and is returned again instantly if needed
+- serves as a "host" for a backend service, ALB & EC2 for example
+- you can choose how many cloudfront endpoints ou want yo use
+	- all 200
+	- 100 least expensive
+	- specific
+- Invalidate Cache bypassing the TTL (time to live) 
+	- in case backend changed
+	- in case you want an already fetched file to update
+### Global Accelerator - Anycast IP
+- basically cloudformation for cloudformation xD
+  - all edge locations use the same IP and the Global
+  - ush mucho sapo leyendo mis notas xddd
+  - 
