@@ -1,0 +1,3 @@
+- An increment is a potentially shippable portion
+- Articats include the product backlog, the sprint backlog, sprint goal, sprint boards and reports
+- Velocity is the rate at which team accomplishes work, 1 Story Point = 1 sprint story
