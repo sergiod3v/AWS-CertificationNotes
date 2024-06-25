@@ -1,0 +1,65 @@
+- ## CASB - Cloud Access Security Brokers
+	- Provide visibility and control  over the use of Cloud Services, they provide:
+		1. Data protection
+		2. Access Control
+		3. Compliance
+		4. Threat detection and response
+- ## Identity Authentication and Authorization
+	- ### AAA:
+		- Authentication
+		- Authorization
+		- Accounting
+			- Logging what you do
+- ## Tunneling Solutions
+	- Enca
+	- ssh
+	- Layer 2 Tunneling Protocol (L2TP)
+		- use IPSec for encryption, else no encryption
+	- PPTP - Point to Point Tunneling Protocol
+		- disappearing in the future
+	- GRE - Generic Routing Encapsulation
+		- wireless communication
+			- All data that goes to a WAP (wireless access point)
+				- tunneled through GRE back2  the controller 
+			- de-encapsulates data
+			- decides where it needs to go
+- ## Firewalls
+	- Portbased
+		- allowed/disallowed ports
+		- IP add filtering
+	- Stateful
+		- Internal Network -> Internet
+		- Remembers the state so communications are possible
+	- In the Cloud
+		- firewall service
+		- Virtual Server Instance
+- ## Antivirus
+	- Cloud antivirus
+		- encrypts file and analyzes in cloud
+	- Host based IDS/IPS (Intrusion Detection/Prevention System )
+- ## DNS Security
+	- ### DNS Security (DNSSEC)
+		- DoT (DNS over TLS)
+		- DoHTTPS (DNS over HTTPS)
+- ## NTP (TCP[123])
+	- Sync clocks for comp devices
+- ## Other Devices
+	- ADC (Application Delivery Controller)
+		- Networking device to optimize and distribute the application
+			- ALB
+			- Application Accelerator
+	- Packet Brokers
+	- Capture filter and dist network traffic to monitoring tools
+- ## User permissions
+	- #### DAC (Discretionary Access Control)
+		- Both User & Admin are in chrage of security and permissions
+		- typical in small networks
+	- #### MAC (Mandatory Access Control)
+		- Security admin 
+		- Roles
+		- Central Authrity determines the acess
+- ## Scanners
+	- Port Scanners
+		- Nmap, Masscan, Angry IP Scanner
+	- Vulnerablity Scanners
+		- Nessus, Open VAS, Qualys

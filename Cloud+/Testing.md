@@ -1,0 +1,62 @@
+
+## Vulnerability Testing
+- Available exploits
+- Scan ports & Generate reports
+- Monitoring suspicious activity
+- ### Pen Testing
+	- Identify Vulnerabilities
+	- Networking Scanning
+	- Attack Software:
+		- Metasploit
+	- Proper Procedures
+		- Permission 
+		- Action
+		- Report
+## Performance Testing
+- Load Testing
+	- Demand
+		- Ensures cloud services will handle all demand by stress testing it
+		- SmartBear LoadNinja - Tool for load testing components
+- Stress Testing
+	- Max out capabilities of the system
+- Capacity Testing
+	- Gradually increasing demand on the server 
+- Endurance Testing
+## Regression Testing
+- Ensures that pdates don't crash the solution
+- Steps:
+	- Identify the scope
+	- Develop & Execute test cases and/or scripts
+	- Report issues or bugs
+	- Resolve and verify resolutions
+- On every update:
+	- Verify existing code is not affected
+	- Every possible new-feature related code must be unitesting
+	- New bugs or colissions
+# Test Analysis
+
+- ### Success Factor Indicators
+	- *Should be included in tje report initally
+		- Sizing 
+		- Performance
+		- Availability
+		- Connectivity
+		- Data Integrity
+		- Proper Functionality
+- ## Testing Actions
+	- Baseline comparison
+	- Service Level Agreement
+	- Identify Cloud performance fluctuation
+		- Latency Variables
+		- Processing speed variables
+	- **Document results.
+- ## Baseline Confirmation Metrics
+	- CPU usage
+	- RAM usage
+	- Storage Usage
+	- OS and application versions and patch lvls
+	- Network Utilization
+	- Auditing Configuration
+	- Managamennt Tool Compliance
+- ## Compare Baseline vs Actual
+	- ![[Pasted image 20240613112931.png]]

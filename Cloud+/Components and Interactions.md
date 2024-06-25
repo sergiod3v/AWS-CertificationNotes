@@ -1,0 +1,43 @@
+# Cloud
+- ## Storage
+	- Block
+		- Read/write to the disk
+	- File/object
+		- "Buckets"
+	- Data
+		- Databases
+- ## Compute Servers
+	- Virtual Servers
+		- Put a specific OS server in the cloud
+	- Virtual Paltforms
+		- Server running a set of runtime environments to run applications
+	- Serverless processing
+		-  Code that runs somewhere in the cloud
+- ## Security
+	- Authentication
+	- Authorization
+	- Data Integrity
+	- Confidentiality
+		- Encryption
+			- At rest / In Transit
+
+# Non Cloud components interaction
+- ## Network 
+	- Direct Connection
+		-  w/ Cloud Provider
+		- Expensive
+	- VPN Connection
+		- Tunnel (!== VPN)
+		- Encrypt data to make a VPN
+		- Tunnel can (or can't) be encrypted
+		- f/e GRE (Generic Routing Encapsulation)
+- ## Application 
+	- Where it is ran / Where is the data?
+		- in the cloud
+		- locally 
+		- both
+- ## Storage Components
+	- Internet based
+		- transfer via Internet using encryption
+	- Offline archive shipment
+	- Using fucking TRUCKS (LOL)
