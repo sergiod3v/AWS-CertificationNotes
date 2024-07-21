@@ -1,0 +1,10 @@
+ - ### Output as Input command | command
+	- Example 1: ![[Pasted image 20240721145701.png]]
+		- <_command_with_output_> | <_command_that_requires_input> 
+			- <_command_with_output_>: 
+				- String from tail - 5 /var/log/messages used as input for 
+			- <_command_that_requires_input_>: 
+				- String from tail - 5 /var/log/messages used as input for 
+	- Example 2: ![[Pasted image 20240721150146.png]]
+- /dev/null -> black hole
+	- ![[Pasted image 20240721144111.png]]

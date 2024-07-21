@@ -1,0 +1,13 @@
+- ## main:
+	- ![[Pasted image 20240714165809.png]]
+	- ### (app) application struct.templateMap
+		- ![[Pasted image 20240714165829.png]]
+		- #### http-server.Handler 
+			- ![[Pasted image 20240714165839.png]]
+			- app.routes()
+				- ![[Pasted image 20240714165849.png]]
+				- app.Show{page} (mux.Get)
+					- ![[Pasted image 20240714165928.png]]
+					- app.render
+						- ![[Pasted image 20240714170819.png]]
+						- ![[Pasted image 20240714170828.png]]

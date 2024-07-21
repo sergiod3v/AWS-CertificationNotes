@@ -1,0 +1,90 @@
+
+- Over 150 words
+- 20mins
+- 1/3 of ur marks
+- Describing visulal information
+- Types of Data:
+	- Bar Graph
+		- X & Y Axis
+		- Bars
+	- Line Graph
+		- Axis
+		- Line
+	- Pie Chart
+		- Slice
+	- Flow Chart
+		- Cells
+	- Diagram / Process
+---
+## Band Descriptors (4)
+- 0-9 Grading (Bands)
+- Task achievement - TA
+	- A detailed answer
+	- An overview
+	- Key Features
+	- Accurate
+	- 150+ words
+- Coherence and Cohesion - CC
+	- Paraphrase
+	- Logical Order
+	- Linking Words
+	- Paragraphs
+- Lexical Resource - LR
+	- Range of Vocabulary
+	- Few Errors
+	- Less common
+	- COLLOCATIONS
+- Grammatical range and acurracy - GRA
+	- Sentence types
+	- Few errors
+	- Tense
+	- Punctuation
+---
+# Analyzing data and Plan
+- ### Key Questions - Graphs Charts & Maps
+	- What is the Key Data ?
+		- Axes / columns + rows / keys + titles
+	- What are the trends
+		- Increase or Decrease
+	- What are the differences or similarities
+		- Where are big differences? Is anything the same?
+- ### Answer Planning
+	- Example question:
+		- 1: ![[Pasted image 20240719101627.png]]
+		- 2:![[Pasted image 20240719102147.png]]
+	- Practice Excercises:![[Pasted image 20240719102752.png]]
+		- Groups:
+			- 1 t/w & 2-3 t/w
+		- Overview:
+			- Most people swimm only 1 t/w
+			- Australia has the highest percentage of swimmers
+___
+# Task 1 Answer Structure
+- Question Model:
+	- ![[Pasted image 20240719103934.png]]
+- Introduction
+	- Paraphrasing is very useful,  you can understand the data better and make a great introduction to the topic
+	- Example:
+		- _**The bar chart illustrates**_ the _**total number of students enrolled**_ into three different courses between 2001 and 2004 
+	- Use Cases
+		- ### The graph / chart / table / map==(s)==
+			- Illustrates
+			- Depicts
+			- Represents
+			- Gives Information
+			- Shows
+			- ==Compares / shows==
+		- ### Process Diagrams
+			- **The diagram(s) illustrate(s) / depict(s)** _**==the way in which==**_ the product **is produced**
+- Overview
+	- Task Achievement (Band 7)
+		- _"Presents a clear overview of main trends, differences or stages"_
+	- Should not contain details and figures
+	- Excercise:
+		- ![[Pasted image 20240719105506.png]]
+		- Solution
+			- Groups: UK and (FR & GER)
+			- Overview:
+				-  Regional houshold recycling rates increased in both UK and Germany, while France's decreased and slightly recovered. 
+- Detail Paragraph 1
+- Detail Paragraph 2

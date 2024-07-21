@@ -1,0 +1,29 @@
+- Crear herramientas protegiendo data y seguridad.
+- AI AWS Service
+	- Crear mas sencillamente apps aprovechando LLM Models + Business Data
+	- Interactive Experience
+- RACK App (context smt)
+	- Retrieval Augmented Generation
+- Serverless
+- Workflow
+	- Based on IAM Roles (can/should)
+- AWS Q Business Expert Workflow
+- Network
+	- Cualquier VPC 
+		- Crear data de VPC
+		- indexarla al VPC
+		- Inflight Encryption -> Amazon Reponsiblity by def
+	- Deploy web exp con basic Auth | SSO
+- Privacy
+	- Apps created communicate with your data
+	- LLM Model
+		- Retrieve own data as context in secure way
+		- Not used to train other LLMs
+		- Not shared with CSPs
+	- Define ACLs for data source
+	- Encrypt indexed data & convert encrypted data
+	- P2P Encrypted Connection
+
+- Go and compare data sources cohsen by you
+- Take it as context
+- Communicate context to LLM & answer questiona

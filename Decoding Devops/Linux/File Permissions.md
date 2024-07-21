@@ -1,0 +1,31 @@
+- ls -lt ~/
+	- ![[Pasted image 20240721160217.png]]
+	- r : read
+	- w : write
+	- x : execute
+	- Understatind output (sample/)
+		- drwxr-xr-x
+			- d : first char -> filetype
+				- Directory
+			- rwx- : next 3 chars -> User permissions
+				- read, write & exec
+			- r-x : next 3 chars -> Group permissions
+				- read & exec, no write
+			- r-x : next 3 chars -> Other permissions 
+				- read & exec, no write
+- ## manipulating file permissions
+	- ### Change Owner
+		- ![[Pasted image 20240721161617.png]]
+		- chown -R <_username:group_name(optional)_> <_file_>
+	- ### Change Permissions
+		- chmod o-x <_file_path_>
+		- ![[Pasted image 20240721161849.png]]
+		- Command wbw:
+			- chmod: main command
+			- o-x : 
+				- o : others
+					- g & u supported
+				- - : remove
+					- + supported
+				- x : execute permissions
+					- r & w supported

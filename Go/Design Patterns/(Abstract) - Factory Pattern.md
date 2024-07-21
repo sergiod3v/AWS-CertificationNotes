@@ -1,0 +1,4 @@
+- Sensible default values
+- ![[Pasted image 20240714175836.png]]
+- "Placeholder" or "default value object creator"
+	- thats why its called factory!

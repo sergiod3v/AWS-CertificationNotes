@@ -1,0 +1,51 @@
+- ![[Pasted image 20240721151526.png]]
+- ### Users File
+	- ![[Pasted image 20240721151941.png]]
+	- ![[Pasted image 20240721152202.png]]
+		- Separated by ":":
+			- username
+			- link to shadow file
+				- encrypted password
+			- user_id
+			- group_id
+			- comment
+			- home directory
+			- login shell
+- Groups file
+	- ![[Pasted image 20240721152826.png]]
+- User details:
+	- ![[Pasted image 20240721152847.png]]
+- ## Adding Users & Groups
+	- ### Users
+		- Creating Users
+			- ![[Pasted image 20240721152953.png]]
+		- Updating password:
+			- passwd <_username_> 
+			- now, if any non-root user wants to switch to these users, it will require a password to do so
+		- Last logged in user:
+			- last
+		- Current logged in user
+			- who
+		- opened files by user
+			- yum install lsof
+			- lsof -u <_username_>
+		- Delete users
+			- userdel -r <_username_>
+				- -r : <_remove_flag_> removes home dir and mail spool as well
+	- ### Groups
+		- /etc/group is a "config file", you can also edit it using vim:
+			- ![[Pasted image 20240721154058.png]]
+		- Creating groups
+			- ![[Pasted image 20240721153314.png]]
+		- usermod -aG devops ansible
+			- usermod: base command
+			- -aG : 
+				- a: add
+				- G : _**suplementary**_ group
+				- g instead of G : changes _**primary**_
+			- devops: <_group_name_> parameter
+			- ansible: <_username_> parameter
+			- ![[Pasted image 20240721153828.png]]
+			- ![[Pasted image 20240721153840.png]]
+	- ### Deleting both:
+		- ![[Pasted image 20240721154907.png]]

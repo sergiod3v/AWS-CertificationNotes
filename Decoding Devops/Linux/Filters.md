@@ -1,0 +1,108 @@
+- # grep
+	- ### Single File
+		- ![[Pasted image 20240721105916.png]]
+		- Command wbw:
+			- grep: base command
+			- -i : flag, ignore case sensitive and show all results
+			- firewall: <_parameter_>, word to find
+			- anaconda-ks-cfg: <_parameter_>, file to search in
+	- ### Multiple files/directories
+		- ![[Pasted image 20240721110753.png]]
+		- Command wbw:
+			- grep: base command
+			- -iR : 
+				- "i": case sensitive ignored
+				- "R": <_recursively_> search in child folders
+			- * : indicates all file inside current directory
+	- ### Looking for a file if not sure where it is
+		- ![[Pasted image 20240721111206.png]]
+		- Command:
+			- grep: ""
+			- -R: <_recursively_> search in child folders
+			- SELINUX: <_word_to_search_> parameter
+			- /etc/* : <_file_path_> parameter (indicates all child folders must be searched as well)
+	- ### Exclude certain word from output
+		- ![[Pasted image 20240721111606.png]]
+		- Command:
+			- grep: ""
+			- -iv: 
+				- "v": invert match
+				- "i": case sensitive ignored
+			- firewall: <_word_to_exclude_> parameter
+			- anaconda-ks.cfg : <_file_path_> parameter 
+- # less
+	- File reader (similar to "cat")
+	- "vim" reader, you can use basic commands
+- # head
+	- First lines of file
+	- ![[Pasted image 20240721112021.png]]
+		- Command wbw:
+			- head: main command
+			- -17: <_no_lines_to_show_> numeric flag
+			- anaconda-ks.cfg: <_file_path_> parameter
+- # tail
+	- last lines of file
+	- ![[Pasted image 20240721112232.png]]
+		- Command wbw:
+			- tail: main command
+			- -9: <_no_lines_to_show_> numeric flag
+			- anaconda-ks.cfg: <_file_path_> parameter
+	- tail -f <_file_path_>:
+		- -f : <_follow_fag_>  toggles live update view
+		- useful for log_files since they constantly update
+- # cut
+	- Separate strings in files
+	- When you find a separator in a text-file:
+	- ":" for example
+		- ![[Pasted image 20240721113412.png]]
+	- Command wbw:
+		 - cut :base command
+		- "-d==:==" :
+			- "d" : <_delimiter_flag_>
+			- ":" : <_delimiter_string_flag_> 
+			- (separating by ":" character)
+		- -f1: 
+			- "f": <_field_flag_>
+			- "n": <_field_number_flag_>
+				- In this case "username" was -f<1>
+				- ![[Pasted image 20240721114104.png]]
+		- /etc/passwd: <_file_path_> parameter
+- # awk
+	- Advanced delimeter
+	- ![[Pasted image 20240721114357.png]]
+	-  Command wbw:
+		 - awk :base command
+		- -F':' '{print $1}' :
+			- F : <_field_separator_flag_>
+			- ':' : <_delimiter_string_flag_> 
+			- '{print $1}' : 
+				- print: <_action_flag_>
+				- $1: specify <_field_number_> 
+		- /etc/passwd: <_file_path_> parameter
+- # replacing words
+	- vim editor :
+		- (_**1 word per line max**_)
+			- ![[Pasted image 20240721115032.png]]
+			- ![[Pasted image 20240721115047.png]]
+			- Command wbw:
+				- %s : <_search_command_>
+				- /covid19 : <_word_to_search_>
+				- /coronavirus : <_word_to_replace_>
+		- (_**no words per line limit**_)
+			- ![[Pasted image 20240721115444.png]]
+			- ![[Pasted image 20240721115450.png]]
+			- Command wbw:
+				- %s : <_search_command_>
+				- /covid19 : <_word_to_search_>
+				- /coronavirus : <_word_to_replace_>
+				- /g : <_global_indicator_>
+	- ### sed:
+		- 
+		- * :   can be used, massive text-replace can be done this way to multiple files
+		- ![[Pasted image 20240721120137.png]]
+		- Command wbw:
+			- sed : main command
+			- -i : <_edit_file_indicator_> if not provided, sed will only print the "preview" of the change:
+				- (file not changed) ![[Pasted image 20240721120226.png]]
+			- 's/coronavirus/covid19/g': same command as vim exampel above (except for %s -> s)
+			- sample-txt.txt: <_file_path_>

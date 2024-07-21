@@ -1,0 +1,49 @@
+- Module concept
+	- _**> go mod init .**_
+	- creates go.mod which specifies project name and go version to run...
+	- _**> go build**_
+		- command used to build and bundle executable  app
+	- > _**package main**_
+		-  indicates entry point 
+- Pointers
+	- ![[Pasted image 20240625185706.png]]
+- Functions
+	- ![[Pasted image 20240626081216.png]]
+	- returned variable names defined in return type definition
+	- _**> return**_ reserved word alone since returned var names defined
+- ![[Pasted image 20240626160036.png]]
+	- _ is used to avoid using a returned variable without getting an error
+- ### go.mod == package.json
+	- Describes _**required**_ libraries
+		- installed using go get
+		- go get -> npm install
+- ## Pointers
+	- Exact memory address of the variable
+	- ==avoid var copy== when function runs
+		- use memory address instead
+		- mainly used for big ass numbers
+		- ==directly mutate== code using its address
+	- Same value, different memory address... ->**_copy created**_:![[Pasted image 20240626171731.png]]
+	- Pointer is *int type
+	- Access value in pointer: ![[Pasted image 20240626172026.png]]
+	- default value for pointers -> nil
+- ## Interface
+	- A set of conditions that allow Structs to have generalPurpouse names for functions without colliding with other structs
+	- Concize function names and clearly defined types of structs and its must-have generic methods they share between
+	- ![[Pasted image 20240627182054.png]]
+	- ![[Pasted image 20240627182112.png]]
+- ## Generics
+	- Same function can accept & return different defined types
+		- depending on provided values:
+		- ![[Pasted image 20240627183411.png]]
+		- Alternative to "any || interface{}" since it can accept almost any type as long as it is defined in [T type | type ] array.
+		- Variable type:![[Pasted image 20240627183629.png]]
+- ## Functions  as Parameters
+	- This allows simple reusable functions where if a nested function is needed, it can be optimized to accept multiple.
+		- ![[Pasted image 20240628083318.png]]
+		- Custom type (transformFn) also used to simplify code
+- ## Functions as return type:
+	- Allows flexibility so you can logically handle a scenario where you have to dynamically return different functions for a use case 
+- ## Concurrency / Go Rutines
+	- Basically indicate when code execution should be handled differently
+		- <-value // reference value to handle rutines execution indicators
