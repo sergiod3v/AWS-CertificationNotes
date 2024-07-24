@@ -1,0 +1,12 @@
+- # Adding users to sudoers 
+	- ## visudo
+		- opens sudo users file
+			- edit it and add users as needed
+			- ![[Pasted image 20240721174735.png]]
+				- NOPASSWD: 
+					- password not required when sudo-ing
+	- ## sudoers.d
+		- Folder used to safely add and remove users to sudoers
+		- ![[Pasted image 20240721175305.png]]
+			- add the configuration there and just reference the user name
+			- safely delete user from sudoers without messing up _**visudo**_ file

@@ -1,7 +1,0 @@
-- /var/log/: all logs from different apps
-	- Ex:![[Pasted image 20240721112710.png]]
-- You see errors in log files.
-	- tail -f 
-		- see live-update of log files to 
-		- troubleshoot errors
-- 

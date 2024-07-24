@@ -1,0 +1,26 @@
+- # Compressing
+	- ## tar
+		- ## ZIP
+			- tar -czvf <_zip_name_>.tar.gz <_file_to_compress_>
+				- tar : base command
+				- -czvf
+					- c : create
+					- z : compress
+						- g-zip
+						- this flag makes us use _**.tar.gz**_
+					- v : verbose
+					- f  :  file
+		- ## UNZIP (using tar)
+			- tar -xzvf <_zip_name_>.tar.gz <_output_dir_>
+				- tar : base command
+				- -xzvf
+					- x : extract | xtract
+					- z : compressed file
+					- v : verbose
+					- f  :  file
+	- ## zip
+		- ### ZIP
+			- zip -r <_output_destination_> <_file_to_zip_>
+				- -r : recursive, all inside
+		- ### UNZIP
+			- unzip <_zip_name_>

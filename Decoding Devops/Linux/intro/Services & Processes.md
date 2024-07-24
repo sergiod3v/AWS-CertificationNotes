@@ -1,0 +1,24 @@
+- # systemctl
+	- ## options 
+		- systemctl enable <service_name>
+			- Will start with system start/reload/reboot
+		- systemctl status <service_name>
+		- systemctl start <service_name>
+		- ![[Pasted image 20240721190104.png]]
+- # Services Dir
+	- /etc/systemd/system/multi-user.target.wants/![[Pasted image 20240721190353.png]]
+
+# Processes
+- ## top
+	- All dynamic processes based on consumption
+- ## ps aux
+	- just displays and quits
+	- ![[Pasted image 20240721191259.png]]
+	- First process is always systemmd (newer)
+		- Ubuntu -> init
+	- ### ps -ef
+		- Lists without memory consumption and shows
+		- _**PPID**_ (Parent Process ID)
+- ## kill <_PID_> 
+	- Will kill/stop the process and its child processes
+- 

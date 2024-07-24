@@ -1,0 +1,23 @@
+- Hypervisor :  Oracle VirtualBox
+- Automation : Vagrant
+- Stack:
+	- nginx
+		- load balancing experience
+	- tomcat
+		- apache, java webapp service
+			- app sits here
+			- if extra storage -> NFS
+	- rabbitmq
+		- Msg Brokers / Queueing Agent
+	- memcached
+		- db caching connected to mysql server
+	- mysql
+		- Store login from tomcat
+		- Store user info from tomcat
+- Objetive:
+	- Social media webapp
+		- ![[Pasted image 20240723110000.png]]
+- Host Manager:
+	- Automatically configures discoverability for the rest of the services, making the accessible via name (not ip)
+	-  ![[Pasted image 20240724075659.png]]
+- 

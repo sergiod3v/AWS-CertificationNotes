@@ -72,7 +72,7 @@
 	- ![[Pasted image 20240721114357.png]]
 	-  Command wbw:
 		 - awk :base command
-		- -F':' '{print $1}' :
+		 - -F':' '{print $1}' :
 			- F : <_field_separator_flag_>
 			- ':' : <_delimiter_string_flag_> 
 			- '{print $1}' : 

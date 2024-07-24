@@ -1,0 +1,12 @@
+- /var/log/: all logs from different apps
+	- Ex:![[Pasted image 20240721112710.png]]
+- You see errors in log files.
+	- tail -f 
+		- see live-update of log files to 
+		- troubleshoot errors
+- xargs -> supports multiple inputs to execute multiple commands
+	- ps -ef | grep httpd | grep -v grep | awk '{print $ 2}' | _**xargs**_ kill -9
+		- ![[Pasted image 20240721192128.png]]
+		- use this multiple lines as parameters to individually exec the commands with the lines
+- systemctl list-units --type=service --state=active 
+- htop to view sys processes

@@ -1,0 +1,2 @@
+- Vars can be defined in a terminal (they live as long as it does)
+	- ![[Pasted image 20240723093720.png]]

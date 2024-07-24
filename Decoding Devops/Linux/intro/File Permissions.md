@@ -1,0 +1,57 @@
+- ls -lt ~/
+	- ![[Pasted image 20240721160217.png]]
+	- r : read
+	- w : write
+	- x : execute
+	- Understatind output (sample/)
+		- drwxr-xr-x
+			- d : first char -> filetype
+				- Directory
+			- rwx- : next 3 chars -> User permissions
+				- read, write & exec
+			- r-x : next 3 chars -> Group permissions
+				- read & exec, no write
+			- r-x : next 3 chars -> Other permissions 
+				- read & exec, no write
+- ## manipulating file permissions
+	- ### Change Owner
+		- ![[Pasted image 20240721161617.png]]
+		- chown -R <_username:group_name(optional)_> <_file_>
+	- ### Change Permissions
+		- chmod -R  to apply permissions recursively 
+			- (child folders & files)
+		- #### Letter method:
+			- chmod o-x <_file_path_>
+			- ![[Pasted image 20240721161849.png]]
+			- Command wbw:
+				- chmod: main command
+				- o-x : 
+					- o : others
+						- g & u supported
+					- - : remove
+						- + supported
+					- x : execute permissions
+						- r & w supported
+				- Remove all permissions
+					- (u, g, o)(-, +)rwx
+						- o-rwx for example
+		- #### Numeric Method
+			- 4 (for read)
+			- 2 (for write)
+			- 1 (for execute)
+			- Sum these do determine permissions:
+				- 7 -> r + w + x
+				- 6 -> r + w
+				- 5 -> r + x
+				- 4 -> r
+				- 3 -> w + x
+				- 2 -> w 
+				- 1 -> x
+			- A permission number is composed of 3 digits:
+				- chmod 640 <_file_path_>
+					- First digit (6): Owner's / User's Permissions:
+						- r + w
+					- Second digit (4): Group's Permissions
+						- r
+					- Third digit (0): Other's Permissions
+						- no permissions
